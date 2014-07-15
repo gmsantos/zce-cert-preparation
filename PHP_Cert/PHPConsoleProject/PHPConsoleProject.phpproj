@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>PHPConsoleProject</Name>
+    <ProjectGuid>6025c4a0-6e13-4c08-bc02-1ed6c42974be</ProjectGuid>
+    <OutputType>Console</OutputType>
+    <RootNamespace>PHPConsoleProject</RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <StartupFile>index.php</StartupFile>
+    <AssemblyName>PHPConsoleProject</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="01.Basics\.gitkeep" />
+    <Compile Include="index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="01.Basics\" />
+    <Folder Include="02.Data types\" />
+    <Folder Include="03.Strings\" />
+    <Folder Include="04.Array\" />
+    <Folder Include="05.InputOutput\" />
+    <Folder Include="06.Functions\" />
+    <Folder Include="07.OOP\" />
+    <Folder Include="08.Databases\" />
+    <Folder Include="09.Security\" />
+    <Folder Include="10.Web\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="02.Data types\.gitkeep" />
+    <Content Include="03.Strings\.gitkeep" />
+    <Content Include="04.Array\.gitkeep" />
+    <Content Include="05.InputOutput\.gitkeep" />
+    <Content Include="06.Functions\.gitkeep" />
+    <Content Include="07.OOP\.gitkeep" />
+    <Content Include="08.Databases\.gitkeep" />
+    <Content Include="09.Security\.gitkeep" />
+    <Content Include="10.Web\.gitkeep" />
+  </ItemGroup>
+</Project>
