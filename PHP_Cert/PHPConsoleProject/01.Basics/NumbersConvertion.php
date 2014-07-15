@@ -4,6 +4,10 @@
  * More info on 
  * http://php.net/manual/en/language.types.integer.php
  * http://php.net/manual/en/language.types.float.php
+ * 
+ * Octal Convertion
+ * 
+ * http://www.sitepoint.com/forums/showthread.php?692045-Understanding-Octal-numbers-in-php
  */
 
 
