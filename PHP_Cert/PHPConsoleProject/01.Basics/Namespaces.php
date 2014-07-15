@@ -5,11 +5,11 @@ namespace MyProject {
     const CONSTANT = 'ABC ';
 }
 
-namespace { // global code
+namespace { // Global Scope
     echo MyProject\CONSTANT;
 }
 
 namespace MySecondProject {
-    // '\' maps to global namespace
+    // '\' maps to Global Scope
     echo \MyProject\CONSTANT;
 }

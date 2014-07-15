@@ -35,5 +35,5 @@ namespace MagicConstants {
 }
 
 namespace { // Global
-    var_dump(__NAMESPACE__);     // output empty on Global
+    var_dump(__NAMESPACE__);     // output empty on Global Scope
 }

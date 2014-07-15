@@ -1,6 +1,6 @@
 <?php
 
-namespace { // Global Namespace
+namespace { // Global Scope
 
     // Constants can be defined ...
     const CONSTANT = 'ABC ';
