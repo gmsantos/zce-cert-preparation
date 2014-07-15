@@ -17,7 +17,13 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="01.Basics\.gitkeep" />
+    <Compile Include="01.Basics\Bitwise.php" />
+    <Compile Include="01.Basics\Comparsion.php" />
+    <Compile Include="01.Basics\Constants.php" />
+    <Compile Include="01.Basics\IncreaseDecrease.php" />
+    <Compile Include="01.Basics\Namespaces.php" />
+    <Compile Include="01.Basics\Operators.php" />
+    <Compile Include="01.Basics\MagicConstants.php" />
     <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
