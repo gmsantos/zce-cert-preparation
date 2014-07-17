@@ -1,4 +1,4 @@
 PHP_Cert
 ========
 
-PHP Certification Examples
+Zend PHP 5.5 Certification Sandbox
