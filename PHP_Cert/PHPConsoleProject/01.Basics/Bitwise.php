@@ -6,7 +6,7 @@
  * ^  - Either-Or  (Xor - Either bit 1)
  * >> - Swift Bits (n >> m == n / 2 ^ m)
  * << - Swift Bits (n << m == n * 2 ^ m)
- * ~  - Negates    (O turn to 1, and vice-versa AND add +1)
+ * ~  - Negates    (O turn to 1, and vice-versa)
  * 
  *      8 4 2 1
  * 13   1 1 0 1        -> (8 * 1) + (4 * 1) + (2 * 0) + (1 * 1)
