@@ -22,8 +22,11 @@
     <Compile Include="01.Basics\Constants.php" />
     <Compile Include="01.Basics\IncreaseDecrease.php" />
     <Compile Include="01.Basics\Namespaces.php" />
+    <Compile Include="01.Basics\NumbersConvertion.php" />
     <Compile Include="01.Basics\Operators.php" />
     <Compile Include="01.Basics\MagicConstants.php" />
+    <Compile Include="02.Data types\SimpleXML.php" />
+    <Compile Include="07.OOP\SPL\ArrayObject.php" />
     <Compile Include="index.php" />
   </ItemGroup>
   <ItemGroup>
@@ -34,17 +37,18 @@
     <Folder Include="05.InputOutput\" />
     <Folder Include="06.Functions\" />
     <Folder Include="07.OOP\" />
+    <Folder Include="07.OOP\SPL\" />
     <Folder Include="08.Databases\" />
     <Folder Include="09.Security\" />
     <Folder Include="10.Web\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="02.Data types\.gitkeep" />
+    <Content Include="02.Data types\XmlFileValid.xml" />
+    <Content Include="02.Data types\XmlFileInvalid.xml" />
     <Content Include="03.Strings\.gitkeep" />
     <Content Include="04.Array\.gitkeep" />
     <Content Include="05.InputOutput\.gitkeep" />
     <Content Include="06.Functions\.gitkeep" />
-    <Content Include="07.OOP\.gitkeep" />
     <Content Include="08.Databases\.gitkeep" />
     <Content Include="09.Security\.gitkeep" />
     <Content Include="10.Web\.gitkeep" />

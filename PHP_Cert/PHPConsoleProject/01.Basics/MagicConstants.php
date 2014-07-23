@@ -7,7 +7,7 @@ namespace MagicConstants {
     echo __DIR__ . PHP_EOL;       // output directory path
     echo __FILE__ . PHP_EOL;      // output directory path with filename
 
-    echo __NAMESPACE__ . PHP_EOL; // output file line number
+    echo __NAMESPACE__ . PHP_EOL; // output namespace
     echo __LINE__ . PHP_EOL;      // output file line number
 
     class MyClass 
