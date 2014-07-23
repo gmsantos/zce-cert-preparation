@@ -6,7 +6,7 @@
  * ^  - Either-Or  (Xor - Either bit 1)
  * >> - Swift Bits (n >> m == n / 2 ^ m)
  * << - Swift Bits (n << m == n * 2 ^ m)
- * ~  - Negates    (O turn to 1, and vice-versa AND add +1)
+ * ~  - Negates    (O turn to 1, and vice-versa)
  * 
  *      8 4 2 1
  * 13   1 1 0 1        -> (8 * 1) + (4 * 1) + (2 * 0) + (1 * 1)
@@ -85,16 +85,13 @@ echo PHP_EOL . PHP_EOL;
 /*
  * ~ - Negate
  * 
- * @TODO: Understand logic
- * 
- *      8 4 2 1
- * 10   1 0 1 0
- * 
- *  ~   -1 -2 -4 -8
- *  ?    0  1  0  1          -> (-8 * 1) + (-4 * 0) + (-2 * 1) + (-1 * 0) = -10
+ *       8 4 2 1
+ * 10    1 0 1 0
+ * ~ 10  0 1 0 1
+ * & 13  1 1 0 1
+ *   ?   0 1 0 1         -> (8 * 0) + (4 * 1) + (2 * 0) + (1 * 1) = 5
+ *
  */
 echo "~ (Negate)" . PHP_EOL;
-echo ~10;
+echo 13 & ~10;
 echo PHP_EOL;
-echo decbin(~10);
-echo PHP_EOL . PHP_EOL;
