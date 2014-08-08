@@ -1,9 +1,10 @@
 <?php
 
+// Third parameter if is a file/path
 $simpleXml = new SimpleXMLElement('XmlFileValid.xml', 0, true);
 
 // procedural call
-//$simpleXml = simplexml_load_file('XmlFileValid.xml');
+$simpleXml = simplexml_load_file('XmlFileValid.xml');
 
 // Invalid XML file display warnings
 //$invalidXml = simplexml_load_file('XmlFileInvalid.xml');
