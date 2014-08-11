@@ -26,6 +26,9 @@
     <Compile Include="01.Basics\Operators.php" />
     <Compile Include="01.Basics\MagicConstants.php" />
     <Compile Include="02.Data types\SimpleXML.php" />
+    <Compile Include="03.Strings\HeredocNowdoc.php" />
+    <Compile Include="03.Strings\Printf.php" />
+    <Compile Include="03.Strings\Regex.php" />
     <Compile Include="07.OOP\SPL\ArrayObject.php" />
     <Compile Include="index.php" />
   </ItemGroup>
@@ -45,7 +48,7 @@
   <ItemGroup>
     <Content Include="02.Data types\XmlFileValid.xml" />
     <Content Include="02.Data types\XmlFileInvalid.xml" />
-    <Content Include="03.Strings\.gitkeep" />
+    <Content Include="03.Strings\ImportantFunctions.txt" />
     <Content Include="04.Array\.gitkeep" />
     <Content Include="05.InputOutput\.gitkeep" />
     <Content Include="06.Functions\.gitkeep" />
