@@ -1,0 +1,24 @@
+http://myphpscriptz.com/php-scripts-tutorials/php-array-functions-tutorial-part-1/
+Covers:
+- array_keys()
+- array_chunk()
+- array_rand()
+- array_count_values()
+
+http://myphpscriptz.com/php-scripts-tutorials/php-array-functions-tutorial-part-2/
+Covers:
+- array_flip()
+- array_key_exists()
+- array_fill_keys()
+- array_fill()
+- array_map()
+- array_unique()
+- count() and size_of()
+
+http://myphpscriptz.com/php-scripts-tutorials/php-array-functions-tutorial-%E2%80%93-part-3/
+Covers:
+- array_diff()
+- array_intersect()
+- array_search()
+- array_reverse()
+- array_values()

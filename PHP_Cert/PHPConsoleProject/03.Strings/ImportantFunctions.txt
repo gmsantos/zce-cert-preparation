@@ -1,5 +1,5 @@
-﻿sscanf()
+﻿sscanf() - Return a formated Input
+printf - Return string lenth
+str_replace ( $search , $replace , $subjectString [ &$count ] )
 
-printf - Return
-
-str_replace(?, ?, ?, ?)
+http://www.scratchinginfo.net/20-handy-php-string-functions/
