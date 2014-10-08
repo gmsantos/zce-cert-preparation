@@ -1,4 +1,4 @@
-PHP_Cert
-========
+ZCE PHP 5.5 Certification Preparation
+======================================
 
-Zend PHP 5.5 Certification Sandbox
+Zend Certified Engineer PHP 5.5 Certification Preparation Sandbox.
