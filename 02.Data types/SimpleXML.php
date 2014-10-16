@@ -1,6 +1,14 @@
 <?php
 
-// Third parameter if is a file/path
+/**
+ * Creates a new SimpleXMLElement object
+ * @link http://php.net/manual/en/simplexmlelement.construct.php
+ * @param $data
+ * @param $options [optional]
+ * @param $data_is_url [optional] True if is a file/path, False is is a string
+ * @param $ns [optional]
+ * @param $is_prefix [optional]
+ */
 $simpleXml = new SimpleXMLElement('XmlFileValid.xml', 0, true);
 
 // procedural call
