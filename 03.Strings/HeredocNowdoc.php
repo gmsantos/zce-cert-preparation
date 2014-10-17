@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Heredoc do var interpolation - Act like double quotes ""
+ * Heredoc does var interpolation - Act like double quotes ""
  * Nowdoc doesn't var interpolation - Act like single quotes ''
  */
 
