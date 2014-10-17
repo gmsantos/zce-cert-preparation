@@ -19,11 +19,19 @@ function addDbPrefix(Traversable $it, $prefix = 'test') {
 $array = array('users', 'roles', 'users_roles', 'users_profile');
 
 try {
-    
-    // apply the callback function to the iterator
-    $it = new ArrayIterator($array);
+
+	$it = new ArrayIterator($array);
     $prefix = 'example';
+	
+    // apply the callback function to the iterator
     iterator_apply($it, 'addDbPrefix', array($it, $prefix));
+	
+	// Anonymous funtions works like a charm
+	iterator_apply($it, function() use ($it, $prefix) {
+		echo $it[$it->key()] = $prefix . '_' . $it->current();
+		echo PHP_EOL;
+		return true;
+	});
 
 } catch(Exception $e) {
     die($e->getMessage());   

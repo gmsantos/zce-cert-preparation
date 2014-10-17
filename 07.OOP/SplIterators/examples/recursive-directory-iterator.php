@@ -9,8 +9,11 @@ $files = new RecursiveIteratorIterator(
 
 // iterate over all files from the child directory "directory-iterator-example"
 foreach ($files as $file) {
+	echo get_class($files) . PHP_EOL;
+	echo get_class($file) . PHP_EOL;
+	
     // skip over dots ("." and "..")
-    if (!$file->isDot()) {
+    if (!$files->isDot()) {
         // example of the 
         echo $file->getRealPath() . PHP_EOL;
     }

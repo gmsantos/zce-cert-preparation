@@ -56,10 +56,10 @@ class TableRows extends RecursiveIteratorIterator {
      */
     public function getBody()
     {
-        $output = '';
+		$this->next();
         while ($this->valid()) {
-            echo '<td>' . $this->current() . '</td>';
-            $this->next();
+            echo '<td>' . (string) $this->current() . '</td>';
+			$this->next();
         }
     }
     
@@ -99,7 +99,7 @@ class TableRows extends RecursiveIteratorIterator {
 try {
     
     // load the database via PDO
-    $dsn = new PDO('mysql:dbname=testdb;host=127.0.0.1');
+    $dsn = new PDO('mysql:dbname=testdb;host=127.0.0.1', 'root', 'root');
 
     // the result only implements Traversable
     $stmt = $dsn->prepare('SELECT * FROM test');
