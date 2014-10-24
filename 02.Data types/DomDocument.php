@@ -8,7 +8,7 @@
  *   DomDocument::save();               // (to a file)
  *   DomDocument::saveXML();            // (to a string)
  *   DomDocument::saveHTML();           // (also to a string, but saves an HTML document instead of an XML file)
- *   DomDocument:saveHTMLFile();        // (to a file in HTML format).
+ *   DomDocument::saveHTMLFile();       // (to a file in HTML format).
  * 
  */
 
