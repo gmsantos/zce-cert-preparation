@@ -1,5 +1,17 @@
 <?php
 
+/*
+ * 
+ * DOM save methods is not so intuitive:
+ * 
+ *   DomDocument::loadHtmlFile();       // and DomDocument::loadHTML()
+ *   DomDocument::save();               // (to a file)
+ *   DomDocument::saveXML();            // (to a string)
+ *   DomDocument::saveHTML();           // (also to a string, but saves an HTML document instead of an XML file)
+ *   DomDocument:saveHTMLFile();        // (to a file in HTML format).
+ * 
+ */
+
 // Set the content type to be XML, so that the browser will   recognise it as XML.
 header( "content-type: application/xml; charset=UTF-8" );
 
