@@ -20,6 +20,8 @@ $simpleXml = simplexml_load_file('XmlFileValid.xml');
 /**
  * Xpath
  * 
+ *  http://www.w3schools.com/xpath/xpath_syntax.asp
+ *
  * - Always return an Array
  * - Node full path (/<parentNode>/<childNode>)
  * - Can omit node match ( // is same as /* /) 
