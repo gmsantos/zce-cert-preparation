@@ -16,8 +16,14 @@ function echoLine($str){
  */
 
 
-echoLine('hello' . 1 + 2 . '34');
+echoLine('hello' . 1 + 2 . '34');    // 'hello1' + 2 => 0 + 2 => '2' . '34' => 234 
 echoLine('hello' . 1 + 2 . 'hello');
 echoLine('hello' . (1 + 2) . '34');
 echoLine(1 + 2 . '34');
-echoLine('34' . 1 + 2);
+echoLine('34' . 1 + 2); // => '341' + 2 => 434
+
+echoLine((int) 'teste123'); // 0
+echoLine((int) '123teste'); // 123
+echoLine((int) '-123teste'); // 123
+
+echoLine(5 + '4 bananas');

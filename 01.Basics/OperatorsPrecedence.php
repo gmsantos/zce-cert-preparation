@@ -1,6 +1,13 @@
 <?php
 
+$a = 11;
+$b = 3;
 
+if ($a > 10 && $b < 5){
+    echo 'verdadeiro';
+} else {
+    echo 'falso';
+}
 
 //	The casting operators allow you to cast variables to new types. Unlike the settype function, 
 //	they return a value that is the value of the variable cast in the new type.
