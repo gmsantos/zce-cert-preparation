@@ -23,6 +23,9 @@ $url
 // Ending must not use quotes
 'IDENTIFIER';
 
+    // Must be on line starting
+    IDENTIFIER;
+
 IDENTIFIER;
 
 var_dump($heredocString);
