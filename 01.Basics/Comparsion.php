@@ -16,7 +16,7 @@ else
  * Value AND type comparsion 
  */
 
-if ($number == $string) 
+if ($number === $string) 
     echo 'true'; 
 else 
     echo 'false';  // Output false

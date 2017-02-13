@@ -8,12 +8,12 @@
 $url = 'https://www.youtube.com/watch?v=LH5ay10RTGY';
 
 // Heredoc can omit ""
-$heredocString = <<<IDENTIFIER
+$heredocString = <<<BATATA
 Hey, I'm a banana!!
 
 $url
 
-IDENTIFIER;
+BATATA;
 
 $nowdocString = <<<'IDENTIFIER'
 Hey, I'm a banana!!
@@ -22,6 +22,8 @@ $url
 
 // Ending must not use quotes
 'IDENTIFIER';
+
+    IDENTIFIER;
 
 IDENTIFIER;
 
