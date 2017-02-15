@@ -31,15 +31,22 @@ if ($dataValida = strtotime($dataInput)) {
 }
 
 // Using DateTime
-$dateTime = DateTime::createFromFormat('Y-m-d', $dataInput);
+$dateTimeToday = DateTimeImmutable::createFromFormat('Y-m-d', $dataInput);
 
 $a = 123;
 $b = $a;
 
 $dateTimeToday = clone $dateTime;
-
 // see for DateInterval details: http://php.net/manual/en/dateinterval.construct.php
 $dateTime->add(new DateInterval('P4D'));
+
+/*
+// Instead clone, we can use DateTimeImmutable PHP 5.5 +
+
+$dateTimeToday = new DateTimeImmutable('-1 days');
+$dateTime = $dateTimeToday->add(new DateInterval('P4D'));
+
+*/
 
 echo $dateTime->format('d/m/Y H:i:s') . PHP_EOL;
 
@@ -50,3 +57,5 @@ echo $interval->format('%R%a days') . PHP_EOL;
 var_dump($dateTimeToday->format('W') == $dateTime->format('W'));
 var_dump($dateTimeToday < $dateTime);
 var_dump($dateTimeToday > $dateTime);
+
+var_dump($dateTimeToday <=> $dateTime);

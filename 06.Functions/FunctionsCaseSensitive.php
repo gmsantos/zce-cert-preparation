@@ -4,6 +4,15 @@ function aCommonFunction ($number = 1){
 	return $number * 10;
 }
 
+if (!function_exists('aCommonFunction')) {
+
+	function aCommonFunction ($number = 1){
+		return $number * 10;
+	}
+
+}
+
+
 class my_class{
 	function aCoMmOnFuNcTiOn ($number = 1){
 		return ACOMMONFUNCTION($number);

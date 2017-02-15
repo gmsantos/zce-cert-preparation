@@ -3,8 +3,12 @@
 // Encode an array
 $teams = [
     'times' => [
-        'Corinthians',
-        'São Paulo',
+        'Corinthians' => [
+            'estadio' => 'itaquera',
+        ],
+        'São Paulo' => [
+            'estadio' => 'morumbi',
+        ],
         'Santos',
         'Portuguesa',
         'Palmeiras'
@@ -17,5 +21,6 @@ $jsonString = json_encode($teams);
 var_dump($jsonString);
 
 var_dump(json_decode($jsonString)); // stdClass
-var_dump((object) json_decode($jsonString, true)); // array
+var_dump((object) json_decode($jsonString, true)); // stdClass
+var_dump(json_decode($jsonString, true)); // array
 var_dump((array) json_decode($jsonString)); // array
