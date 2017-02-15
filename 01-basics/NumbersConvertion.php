@@ -26,6 +26,6 @@ var_dump($hexaNumber);		// 253
 echo "Shorting convertion:\n";
 
 //$newBinaryNumber = 0b1013;	  // Parse Error
-$newOctalNumber  = 048124;    // results in 4
+$newOctalNumber  = 047124;    // results in 4
 
 var_dump($newOctalNumber);
