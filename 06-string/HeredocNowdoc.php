@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Heredoc do var interpolation - Act like double quotes ""
+ * Heredoc does var interpolation - Act like double quotes ""
  * Nowdoc doesn't var interpolation - Act like single quotes ''
  */
 
 $url = 'https://www.youtube.com/watch?v=LH5ay10RTGY';
 
 // Heredoc can omit ""
-$heredocString = <<<IDENTIFIER
+$heredocString = <<<BATATA
 Hey, I'm a banana!!
 
 $url
 
-IDENTIFIER;
+BATATA;
 
 $nowdocString = <<<'IDENTIFIER'
 Hey, I'm a banana!!
