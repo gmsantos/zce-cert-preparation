@@ -1,11 +1,16 @@
 <?php
 
-$pattern = "/(\w*)([0-9]{1})\s/"; // A pattern always have a delimitator, usually '/' or '#'
+$pattern = '/(\w*)([0-9]{1})\s/'; // A pattern always have a delimitator, usually '/' or '#'
 
 $string = "PHP5 released PHP6 not_released";
 
+echo $numberOfMatches = preg_match($pattern, $string, $matches); // Third parameter is a reference to matches
+
+var_dump($matches);
+
+
 // Return number of matches
-$numberOfMatches = preg_match_all($pattern, $string, $matches); // Third parameter is a reference to matches
+echo $numberOfMatches = preg_match_all($pattern, $string, $matches); // Third parameter is a reference to matches
 
 var_dump($matches);
 
@@ -36,3 +41,10 @@ array(2) {
 }
 
 */
+
+$pattern = '/(\w*)([0-9]{1})\s/'; // A pattern always have a delimitator, usually '/' or '#'
+$replace = '${1}7';
+
+$newString = preg_replace($pattern, $replace, $string);
+
+var_dump($newString);

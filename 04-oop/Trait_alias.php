@@ -1,6 +1,9 @@
 <?php
 
 trait A {
+
+    use C;
+
     public function smallTalk() {
         echo 'a';
     }
@@ -18,9 +21,18 @@ trait B {
     }
 }
 
+trait C {
+    public function teste()
+    {
+        echo 'C';
+    }
+}
+
+
 class Talker {
-    use A {
-        A::smallTalk as sm;
+    use B, A {
+        A::smallTalk insteadOf B;
+        A::bigTalk insteadOf B;
     }
 }
 
@@ -32,7 +44,13 @@ class Aliased_Talker {
     }
 }
 
+(new Talker)->sm();
+(new Talker)->smallTalk();
+
+
+exit; 
+
 $talker = new Aliased_Talker;
 $talker->smallTalk();
 $talker->bigTalk();
-$talker->talk();
+$talker->teste();
