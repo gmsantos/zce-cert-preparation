@@ -6,8 +6,6 @@ function add(int $left, int $right) {
  
 try {
     echo add("left", "right");
-} catch (Exception $e) {
-    echo "Exception: " . $e->getMessage();
-} catch (Error $e) { 
+} catch (Exception | Error $e) {
     echo "Error: " . $e->getMessage();
 }

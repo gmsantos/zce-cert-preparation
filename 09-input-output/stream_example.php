@@ -1,5 +1,5 @@
 <?php
-
+/*
 $postdata = [
   'var2' => 'value1',
   'var1' => ['teste'],
@@ -12,8 +12,14 @@ $opts = ['http' =>
     'content' => http_build_query($postdata, '', '&'),
     'timeout' => 5,
   ]
-];
+];*/
 
-$context = stream_context_create($opts);
+//$context = stream_context_create($opts);
 
-echo file_get_contents("http://localhost:8000/", 0, $context);
+chdir(__DIR__);
+
+$stream = fopen('teste/index.php', 'r');
+
+stream_filter_append($stream, 'string.tolower', STREAM_FILTER_READ);
+
+echo fgets($stream);

@@ -25,4 +25,6 @@ try {
         
     } 
     
-} 
+} finally {
+    (unset) $b;
+}
